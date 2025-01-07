@@ -1,0 +1,46 @@
+name: Publish
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: Publish
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Fetch latest code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
+          extended: true
+      - name: Configure
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build
+        run: hugo --minify --theme hugo-book
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4

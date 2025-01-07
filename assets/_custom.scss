@@ -1,0 +1,81 @@
+a:hover {
+	color: #EE67BD;
+}
+
+.markdown.book-article a {
+	color: #EE67BD;
+	text-decoration: underline;
+}
+
+.book-toc-content a {
+	color: black;
+}
+
+.book-toc-content a:hover {
+	color: #EE67BD;
+}
+
+label.flex a {
+	color: black !important;
+}
+
+.book-section-flat a {
+	text-decoration: underline;
+}
+
+ul li a.active {
+	color: #EE67BD !important;
+}
+
+ul li a.toggle {
+	color: black !important;
+}
+
+.book-brand span {
+	color: #EE67BD;
+	font-family: "Playwrite IS";
+	font-size: 1.5rem;
+}
+
+.custom-footer {
+	padding: 2rem 1rem;
+	text-align: center;
+}
+
+.footer-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.footer-container p {
+	font-size: 1rem;
+	margin: 0.5rem 0;
+}
+
+.footer-links {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.footer-links a {
+	align-items: center;
+	color: black;
+	display: flex;
+	font-size: 1.2rem;
+	position: relative;
+	text-decoration: none;
+	transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+	color: #EE67BD;
+	transform: scale(1.2);
+}
+
+.footer-links i {
+	font-size: 1.2rem;
+	margin-right: 0.5rem;
+}

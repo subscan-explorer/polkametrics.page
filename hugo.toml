@@ -1,0 +1,28 @@
+baseURL      = "https://polkametrics.subscan.io/"
+languageCode = "en-us"
+title        = "Polkametrics"
+
+[params]
+BookComment = false
+BookLogo    = "logo.png"
+BookRepo    = "https://github.com/subscan-explorer/polkametrics.page"
+BookSection = "analytics"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[menu]
+[[menu.after]]
+name   = "> Polkametrics GitHub Pages"
+url    = "https://github.com/subscan-explorer/polkametrics.page"
+weight = 1
+
+[[menu.after]]
+name   = "> Polkametrics Telegram Channel"
+url    = "https://t.me/polkametrics"
+weight = 2
+
+[[menu.after]]
+name   = "> Polkametrics Telegram Bot"
+url    = "https://t.me/polkametrics_bot"
+weight = 3

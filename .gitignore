@@ -1,0 +1,15 @@
+# System.
+.DS_Store
+
+# Integrated development environment.
+.vscode
+
+# Package manager.
+## Hugo.
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+/.hugo_build.lock
+
+# Test data.
+tmp
