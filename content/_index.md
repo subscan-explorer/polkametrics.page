@@ -3,7 +3,7 @@ title: Introduction
 ---
 
 ## **Polkametrics**
-**AI-enhanced analytics platform delivering in-depth metrics for the Polkadot ecosystem.**
+![banner](/banner.png)
 
 ---
 
