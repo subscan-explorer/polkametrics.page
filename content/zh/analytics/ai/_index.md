@@ -1,4 +1,4 @@
 ---
 bookFlatSection: true
-title: AI Analytics
+title: AI 分析报告
 ---
