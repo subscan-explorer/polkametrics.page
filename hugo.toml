@@ -1,6 +1,6 @@
-baseURL      = "https://polkametrics.subscan.io/"
-languageCode = "en-us"
-title        = "Polkametrics"
+baseURL                = "https://polkametrics.subscan.io/"
+defaultContentLanguage = 'en'
+title                  = "Polkametrics"
 
 [params]
 BookComment = false
@@ -26,3 +26,18 @@ weight = 2
 name   = "> Polkametrics Telegram Bot"
 url    = "https://t.me/polkametrics_bot"
 weight = 3
+
+[languages]
+[languages.en]
+contentDir   = 'content/en'
+disabled     = false
+languageCode = 'en-US'
+languageName = 'English'
+weight       = 1
+
+[languages.zh]
+contentDir   = 'content/zh'
+disabled     = false
+languageCode = 'zh-CN'
+languageName = '中文'
+weight       = 2
